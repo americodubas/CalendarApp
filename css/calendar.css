@@ -1,0 +1,109 @@
+.title {
+    font-size: 16px;
+    font-family: Arial;
+    margin: 10px;
+}
+
+.container-class {
+    text-align: center;
+    border: 2px solid darkblue;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: Arial;
+    padding-bottom: 5px;
+    float: left;
+    margin-left: 10px;
+}
+
+.container-title {
+    background-color: darkblue;
+    height: 40px;
+    color: white;
+}
+
+.container-title > span {
+    line-height: 40px;
+}
+
+#calendar-dates > table > thead > tr > td {
+    padding: 5px;
+    width: 30px;
+}
+
+.calendar-day {
+    border-bottom: 3px solid white;
+}
+
+.calendar-day:hover {
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+    transition: all 150ms linear;
+}
+
+.calendar-selected {
+    background-color: darkblue;
+    color: white;
+    opacity: .80;
+}
+
+.calendar-inactive {
+    background-color: gray;
+    opacity: .70;
+}
+
+.calendar-appointment {
+    border-bottom: 2px solid red;
+    transition: all 150ms linear;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin: 5px;
+}
+
+#appointment-date {
+    float: left;
+    text-align: left;
+    margin: 5px;
+    width: 100%;
+    font-weight: bold;
+}
+
+#appointment-text {
+    width: 90%;
+    margin: 5px;    
+}
+
+#save-appointment {
+    background-color: darkblue;
+}
+
+#delete-appointment {
+    background-color: red;
+}
+
+button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    display: inline-block;
+    width: 100px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+button:hover {
+    transition: all 150ms linear;
+    opacity: .80;
+}
+
+button:active {
+    transition: all 150ms linear;
+    opacity: .70;
+}
+
+button:disabled {
+    background-color: gray !important;
+}

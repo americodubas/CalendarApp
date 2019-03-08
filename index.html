@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" data-framework="javascript">
+	<head>
+		<meta charset="utf-8">
+		<title>Calendar App</title>
+		<link rel="stylesheet" href="css/calendar.css">
+	</head>
+	<body>
+		<div class="title">
+			<h3>Simple calendar in javascript, allowing only one appointment per day.</h3>
+			<span class="calendar-inactive">10</span> Inactive past day.<br>
+			<span class='calendar-selected'>10</span> Selected day.<br>
+			<span class="calendar-appointment">10</span> Day with appointment.
+		</div>
+		<div class="container-class">
+			<div class="container-title">
+				<span id="calendar-month-year"></span>
+			</div>
+			<div id="calendar-dates">
+			</div>
+		</div>
+		<div class="container-class">
+			<div class="container-title">
+				<span>Appointment</span>
+			</div>
+			<div>
+				<label for="appointment-date">Date:</label>
+				<span id="appointment-date"></span>
+				<input type="hidden" id="date-id" value=""/>
+				<br>
+				<label for="appointment-text">Subject:</label>
+				<textarea id="appointment-text" rows="5"></textarea>
+			</div>
+			<div>
+				<button id="save-appointment">Insert</button>
+				<button id="delete-appointment">Delete</button>
+			</div>
+		</div>
+		<script src="js/calendar.js"></script>
+	</body>
+</html>
